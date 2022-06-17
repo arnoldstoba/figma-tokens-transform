@@ -1,0 +1,8 @@
+{
+  "name": "figma-tokens-transform",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node figma-tokens-transform.js"
+  }
+}
