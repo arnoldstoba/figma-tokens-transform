@@ -14,8 +14,9 @@ const fetchTokens = async () =>
 
 // parse the tokens correctly
 const parseTokens = async (tokens) => {
+  const colorSet = Object.values(tokens)[0];
   let colors = new Map();
-  for (const [key, value] of Object.entries(tokens)) {
+  for (const [key, value] of Object.entries(colorSet)) {
     colors.set(key, value.value);
   }
   return colors;
@@ -31,7 +32,7 @@ const createVariablesFile = async (colors) => {
   });
 
   cssString = cssString.concat('}');
-  await writeFileSync('./dist/variables.css', cssString);
+  writeFileSync('./dist/variables.css', cssString);
 }
 
 // run the method

@@ -1,5 +1,6 @@
 :root {
-  --border-radius-small: 4px;
-  --spacing-16: 16px;
   --color-shopware: #189eff;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-canvas: #F0F0F0;
 }
