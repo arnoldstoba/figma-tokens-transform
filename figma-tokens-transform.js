@@ -8,7 +8,7 @@ const writeFileSync = promisify(fs.writeFile);
 
 // initially fetch the json file
 const fetchTokens = async () =>
-  readFileSync('tokens.json')
+  readFileSync('./tokens.json')
     .catch((err) => console.log(err))
     .then((file) => JSON.parse(file));
 
@@ -31,7 +31,7 @@ const createVariablesFile = async (colors) => {
   });
 
   cssString = cssString.concat('}');
-  await writeFileSync('variables.css', cssString);
+  await writeFileSync('./dist/variables.css', cssString);
 }
 
 // run the method
