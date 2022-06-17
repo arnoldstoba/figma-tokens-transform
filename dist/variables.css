@@ -1,6 +1,9 @@
 :root {
   --color-shopware: #189EFF;
-  --color-white: #FFFFFF;
   --color-black: #000000;
   --color-canvas: #F0F0F0;
+  --color-white: #FFFFFF;
+  --radius-small: 4px;
+  --radius-medium: 8px;
+  --radius-large: 24px;
 }
