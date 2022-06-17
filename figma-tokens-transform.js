@@ -24,13 +24,10 @@ const parseTokens = async (tokens) => {
 
 // write the file
 const createVariablesFile = async (colors) => {
-  const colorMap = new Map(colors);
   let cssString = ':root {\n';
-
-  colorMap.forEach((value, key) => {
+  colors.forEach((value, key) => {
     cssString = cssString.concat(`  ${key}: ${value};\n`);
   });
-
   cssString = cssString.concat('}');
   writeFileSync('./dist/variables.css', cssString);
 }
